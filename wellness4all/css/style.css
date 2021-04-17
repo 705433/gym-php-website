@@ -1,0 +1,700 @@
+/*Landing css*/
+
+.landing-message {
+     text-shadow: 0 1px #aaa, 0 1px #aaa, 0 1px #aaa, 0 1px #aaa;
+    font-weight: bold;
+}
+/*Landing page blinking offer picture css*/
+.offer{
+    border-radius: 20px;
+    width: 100vh;
+    animation-name: offer-blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 1px 1px 1px #666, 2px 2px 4px black;
+}
+
+@keyframes offer-blink {
+    0% {
+        filter: grayscale(20%);
+    }
+    100% {
+        filter: grayscale(100%);    
+    }
+}
+/*Body css*/
+
+.body_background {
+
+    background-image: url(girly2.jpg);
+    background-repeat: repeat;
+    min-height: 100vh;
+}
+
+
+/*Header and menu with dropdown menu.*/
+
+.logo{
+    max-width: 95%;
+}
+.header-text {
+    color: white;
+}
+
+.header {
+    text-align: center;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    border-style: groove;
+    background-size: cover;
+    border-radius: 3vh;
+    background-color: black;
+    z-index: 999;
+    position: fixed;
+}
+
+.menu {
+    font-family: monospace;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    border-radius: 10vh;
+    font-size: 20px;
+    border-style: groove;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    padding: 1px 5px 1px 5px;
+    border: solid #41ff02 1.5px;
+    border-radius: 10vh;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu a:active {
+    background-color: #4CAF50;
+}
+
+.dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-menu:hover .sub-menu {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.sub-menu {
+    background-color: black;
+    position: absolute;
+    display: none;
+    padding: 3px 10px 3px 10px;
+    border-radius: 3vh;
+    text-align: center;
+    border-style: groove;
+}
+
+.sub-menu a:hover {
+    color: green;
+}
+
+/*Buttons: user and admin in header*/
+
+.user {
+    color: white;
+    font-family: monospace;
+    padding: 10px 10px 0px 0px;
+    font-size: 20px;
+    box-sizing: content-box;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.user-buttons {
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    text-align: right;
+}
+
+.admin-button {
+    background-color: #dafbff;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    padding: 3px 5px 3px 5px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    position: relative;
+    color: black;
+}
+
+.admin-button:hover {
+    background-color: #ff4040;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #aaa;
+    padding: 5px 7px 5px 7px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    font-weight: bold;
+}
+
+.admin-button:active {
+    background-color: darkblue;
+}
+
+.logout-button {
+    color: black;
+    font-size: 2.5vh;
+    background-color: #dafbff;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    padding: 3px 5px 3px 5px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    position: relative;
+}
+
+.logout-button:hover {
+    color: black;
+    background-color: #73d6ad;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #aaa;
+    padding: 5px 7px 5px 7px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    font-weight: bold;
+}
+
+/*Red button used for delete */
+
+.red-button {
+    background-color: #ff4040;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    padding: 3px 5px 3px 5px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    position: relative;
+}
+
+.red-button:hover {
+    background-color: indianred;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #aaa;
+    padding: 5px 7px 5px 7px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    font-weight: bold;
+
+}
+
+.red-button:active {
+    background-color: darkred;
+
+}
+/*Submit button*/
+.submit {
+    background-color: #dafbff;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    padding: 3px 5px 3px 5px;
+    transition: padding 0.25s;
+    border-bottom: solid green;
+}
+
+.submit:hover {
+    background-color: #73d6ad;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #aaa;
+    padding: 5px 7px 5px 7px;
+    transition: padding 0.25s;
+    border-bottom: solid green;
+    font-weight: bold;
+
+
+}
+
+.submit:active {
+    background-color: deepskyblue;
+
+}
+/*General button*/
+.button {
+    background-color: #dafbff;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    padding: 3px 5px 3px 5px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #73d6ad;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #aaa;
+    padding: 5px 7px 5px 7px;
+    transition: padding 0.25s;
+    border-bottom: solid blue;
+    font-weight: bold;
+}
+
+.button:active {
+    background-color: darkblue;
+}
+
+/*Different types of pictures used in the website css*/
+
+.list-pic {
+    border-radius: 20px;
+    float: left;
+    max-width: 95%;
+
+}
+
+.list-desc {
+    text-align: left;
+}
+
+.small-pic {
+    border-radius: 20px;
+    width: 20%;
+}
+
+.medium-pic {
+    border-radius: 20px;
+    width: 70vh;
+
+}
+.large-pic {
+    border-radius: 20px;
+    width: 100vh;
+
+}
+
+.team-pic {
+    border-radius: 20px;
+    
+    height: 70%;
+    margin: 0 0 0 0;
+}
+
+
+/*Lists and columns css*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+li {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.col-2 {
+    column-count: 2;
+    column-gap: normal;
+
+}
+.col-3 {
+    column-count: 3;
+    column-gap: normal;
+    overflow: hidden;
+
+}
+.col-4 {
+    column-count: 4;
+    column-gap: normal;
+    overflow: hidden;
+
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-grid;
+}
+
+
+/*Tables for admin pages css*/
+
+.table-list tr td {
+
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    width: 100vh;
+    text-align: center;
+    border-bottom: groove;
+    background-size: cover;
+
+}
+
+.table-list {
+
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    background-color: aliceblue;
+    border-radius: 2vh;
+    border-style: groove;
+
+}
+
+/*footer and table*/
+
+table {
+
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+
+table tr th {
+
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    width: 100vh;
+    text-align: center;
+    bottom: 0;
+
+
+}
+
+table th {
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+table a {
+    color: white;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #00a0b0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-style: groove;
+    position: static;
+    margin-top: 3vh;
+    bottom: 1vh;
+    text-align: center;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.tfoot {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.footer tr td {
+
+    color: white;
+
+
+}
+
+.footer-head {
+
+    color: white;
+
+}
+/*Social media icons css*/
+.social:hover {
+    filter: grayscale(0%);
+
+}
+
+.social {
+    filter: grayscale(100%);
+}
+/*hr*/
+hr {
+
+    box-shadow: 1px 1px 5px 0.5px;
+
+}
+
+
+/*Footer scroll progress bar.*/
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #b8b6b5;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #0096dc;
+    width: 0%;
+    border-radius: 20px;
+}
+
+
+/*Content css*/
+
+.content {
+    overflow: hidden;
+    padding: 27vh 0vh 0vh 0vh;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #1d211b;
+    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
+    text-align: center;
+
+}
+
+/*Heading h4 css*/
+h4 {
+    color: darkslateblue;
+}
+
+/*Map website*/
+
+#map {
+    z-index: -1;
+    height: 50vh;
+    width: 100vh;
+    margin-top: 5vh;
+}
+
+/*Address text css*/
+.address {
+    font-size: 25px;
+    color: #3a566e;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*Message form*/
+
+*:focus {
+
+    outline: none;
+}
+
+
+
+.form ul {
+    width: 750px;
+    list-style-type: none;
+    list-style-position: inherit;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 2px 2px;
+    border: 2px solid #305A72;
+    border-radius: 10px;
+}
+
+.form li {
+    padding: 12px;
+
+
+}
+
+.form-group {
+    font-size: 2.5vh;
+    color: #305A72;
+    font-weight: bold;
+    text-shadow: none;
+    
+}
+
+
+.form {
+    overflow: hidden;
+    font-family: serif;
+    font-size: 3vh;
+    color: black;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #305A72;
+    width: 40vh;
+    text-align: center;
+    margin: auto;
+
+}
+
+.form-border {
+
+    border-radius: 10px;
+    border: 2px solid #305A72;
+    margin-left: 60vh;
+    margin-right: 60vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+.form li:first-child,
+.form li:last-child {
+    border-bottom: 3px double #67856f;
+
+}
+
+form h3 {
+    margin: 0;
+    display: inline;
+}
+
+.required {
+    color: #d45252;
+    padding: inherit;
+    display: inline;
+    position: relative;
+    font-size: 2.5vh;
+}
+/*Error css*/
+.error {
+    color: #FF0000;
+}
+
+/*Option select css*/
+.choose {
+
+    background: #fff;
+    box-shadow: 1px 1px 3px #aaa inset;
+    border-radius: 10px;
+    border-style: groove;
+    border: 2px solid #305A72;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+}
+/*Text area an input css*/
+textarea,
+input {
+
+    background: #fff;
+    box-shadow: 1px 1px 3px #aaa inset;
+    border-radius: 10px;
+    border-style: groove;
+    border: 2px solid #305A72;
+}
+
+textarea:focus,
+input:focus {
+    background: #baff7e;
+    box-shadow: 2px 2px 3px #aaa inset;
+    border-radius: 10px;
+    border-style: groove;
+    border: 2px solid #305A72;
+}
+
+/*Animated title in about us page*/
+.about-text {
+    padding: 5vh 10vh 5vh 10vh;
+    position: relative;
+    font-family: serif;
+    font-size: 25px;
+    color: #1d211b;
+    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
+    text-align: center;
+
+}
+.click {
+
+    animation-name: click-blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 1px 1px 1px #666, 2px 2px 4px black;
+}
+
+@keyframes click-blink {
+    0% {
+        color: blue;
+    
+    }
+
+    100% {
+        color: green;
+  
+    }
+}
+
+/*Modal css*/
+.lg-modal {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    z-index: 1000;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+
+}
+
+.lg-modal-content {
+
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    border-style: groove;
+    background-size: cover;
+    border-radius: 3vh;
+    text-align: center;
+    padding: 2% 2%;
+}
+
+.rg-modal {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 2vh;
+    bottom: 2vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+
+}
+
+.rg-modal-content {
+
+    background-color: white;
+    position: absolute;
+    border-style: groove;
+    background-size: cover;
+    border-radius: 3vh;
+    text-align: center;
+    padding: 0 1%;
+}
+
+.close {
+    text-align: right;
+}
